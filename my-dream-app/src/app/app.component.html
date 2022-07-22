@@ -493,6 +493,10 @@
   <h1>{{name}}</h1>
   <h1>{{email}}</h1>
 
+    <form (submit)="newHobby(hobby)">
+      <input #hobby type="text" placeholder="añadir hobby">
+    </form>
+
   <button (click)="toggleHobbies()" class="btn">Mostrar hobbies</button>
 
   <div *ngIf="showHobbies" class="component2">
