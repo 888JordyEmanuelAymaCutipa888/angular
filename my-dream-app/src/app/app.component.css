@@ -13,3 +13,13 @@
   padding: 20px;
 }
 
+/*estilo boton*/
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: brown;
+  display: block;
+  margin: 3px;
+}
+
+
