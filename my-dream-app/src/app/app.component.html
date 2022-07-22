@@ -527,4 +527,8 @@
 </ul>
 <button (click)="sayHello()" class="btn">hazme click</button>
 
-
+<!--Formulario con referenciaj-->
+<form (submit)="addUser(newUser)">
+  <input type="text" #newUser>
+  <button>Agregar usuario</button>
+</form>
