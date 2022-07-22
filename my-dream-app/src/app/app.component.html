@@ -518,5 +518,13 @@
 <!-- enviando variables y usandolas con el componente html de la app user-->
 <h3>usando componente html de user</h3>
 <ul>
-  <app-user *ngFor="let user of users" [nameUser]="user"></app-user>
+  <div *ngFor="let user of users">
+    <!--Uso del componente html de user-->
+    <app-user [nameUser]="user"></app-user>
+    <!--Añadiendo otro boton para eliminar-->
+    <button (click)="deleteUser(user)">Borrar usuario</button>
+  </div>
 </ul>
+<button (click)="sayHello()" class="btn">hazme click</button>
+
+
