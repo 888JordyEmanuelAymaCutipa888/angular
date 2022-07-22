@@ -43,5 +43,16 @@ export class AppComponent {
     return false;
   }
 
+  
+  sayHello(){
+    alert('Holaa, me invocaste desde app.component.ts');
+  }
+
+
+  sayhello(nameUser:any){
+    alert('Holaa, '+nameUser);
+  }
+
+
 }
 
