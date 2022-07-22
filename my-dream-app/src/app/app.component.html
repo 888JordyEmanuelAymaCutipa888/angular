@@ -492,5 +492,14 @@
 <div class="ash">
   <h1>{{name}}</h1>
   <h1>{{email}}</h1>
-  <h1>{{webpage}}</h1>
+
+    <div *ngIf="showhobbies()" class="component2">
+      <h3>hobbies:</h3>
+      <ul>
+        <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+      </ul> 
+    </div>
+
+    <a href="{{webpage}}" target="_blank">Visita mi sitio Web</a>
+
 </div>
