@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
 
 //envío de variables usando la clase "AppComponent"
 export class AppComponent {
+
+  users = ["ryan","joe", "cameron","john"];
+  activated = false;
+
   title = 'my-dream-app';
   name: string;
   webpage: string;

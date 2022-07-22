@@ -512,3 +512,13 @@
 
 
 <app-hello-world></app-hello-world>
+
+
+
+<!-- enviando variables y usandolas con el componente html de la app user-->
+<h3>usando componente html de user</h3>
+<ul>
+  <li *ngFor="let user of users">
+    <app-user [nameUser]="user"></app-user>
+  </li>
+</ul>
