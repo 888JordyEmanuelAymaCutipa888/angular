@@ -493,19 +493,19 @@
   <h1>{{name}}</h1>
   <h1>{{email}}</h1>
 
-    <form (submit)="newHobby(hobby)">
-      <input #hobby type="text" placeholder="añadir hobby">
-    </form>
+  <form (submit)="newHobby(hobby)">
+    <input #hobby type="text" placeholder="añadir hobby">
+  </form>
 
   <button (click)="toggleHobbies()" class="btn">Mostrar hobbies</button>
 
   <div *ngIf="showHobbies" class="component2">
-      <h3>hobbies:</h3>
-      <ul>
-        <li *ngFor="let hobby of hobbies">{{hobby}}</li>
-      </ul> 
-    </div>
+    <h3>hobbies:</h3>
+    <ul>
+      <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+    </ul> 
+  </div>
 
-    <a href="{{webpage}}" target="_blank">Visita mi sitio Web</a>
+  <a href="{{webpage}}" target="_blank">Visita mi sitio Web</a>
 
 </div>
